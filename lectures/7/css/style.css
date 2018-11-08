@@ -1,6 +1,18 @@
 #main {
     /* add CSS here */
+    margin: auto;
+    max-width: 400px;
 }
 .pet {
     /* add CSS here */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
+    border: dashed orangered;
+    -webkit-box-shadow: 31px 22px 66px 19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 31px 22px 66px 19px rgba(0,0,0,0.75);
+    box-shadow: 31px 22px 66px 19px rgba(0,0,0,0.75)
 }
