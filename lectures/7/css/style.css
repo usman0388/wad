@@ -16,3 +16,8 @@
     -moz-box-shadow: 31px 22px 66px 19px rgba(0,0,0,0.75);
     box-shadow: 31px 22px 66px 19px rgba(0,0,0,0.75)
 }
+#box1{
+    height: 100px;
+    width:100%;
+    background: #9fcdff;
+}
