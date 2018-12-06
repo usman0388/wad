@@ -15,8 +15,8 @@ function add() {
 //-----------  STEP - 2 ----------------------
 //============================================
 
-
-/*var todos = [];
+/*
+var todos = [];
 function add() {
     var task = document.getElementById('task').value;
     todos.push(task);
@@ -41,8 +41,8 @@ function show() {
 //-----------  STEP - 3 ----------------------
 //============================================
 
-
 /*
+
 function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
@@ -84,16 +84,16 @@ function show() {
     document.getElementById('todos').appendChild(ul);
 }
 show();
+
+
 */
-
-
 
 //============================================
 //-----------  STEP - 4 ----------------------
 //============================================
 
 
-/*function getTodos() {
+function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
     if(todos_str !== null)
@@ -162,7 +162,7 @@ function isDone(e) {
     localStorage.setItem('todo',JSON.stringify(todos));
     show();
 }
-show();*/
+show();
 
 
 
