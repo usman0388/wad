@@ -19,6 +19,7 @@
 <header class="container-fluid">
     <div class="row">
         <div class="col-12 no-padding">
+            
             <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
                 <a class="navbar-brand" href="index.php"><img src="media/logo.png" width="175" height="50" alt="logo">
                 </a>
