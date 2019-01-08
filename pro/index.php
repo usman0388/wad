@@ -1,9 +1,7 @@
-<?php
-    require "server/functions.php";
-?>
-
-
 <!DOCTYPE html>
+<?php
+require "server/functions.php";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,9 +17,8 @@
 <header class="container-fluid">
     <div class="row">
         <div class="col-12 no-padding">
-            
             <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
-                <a class="navbar-brand" href="index.php"><img src="media/logo.png" width="175" height="50" alt="logo">
+                <a class="navbar-brand" href="index.html"><img src="media/logo.png" width="175" height="50" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button"
                         data-toggle="collapse"
@@ -44,13 +41,13 @@
                     <div class="col-lg-3 col-md-4 col-sm-5">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-sm-right">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.php"><i class="fas fa-heart sc-color fa-2x"></i></a>
+                                <a class="nav-link" href="index.html"><i class="fas fa-heart sc-color fa-2x"></i></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.php"><i class="fas fa-shopping-cart sc-color fa-2x"></i></a>
+                                <a class="nav-link" href="index.html"><i class="fas fa-shopping-cart sc-color fa-2x"></i></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.php"> <span class="sc-fs">Login </span></a>
+                                <a class="nav-link" href="index.html"> <span class="sc-fs">Login </span></a>
                             </li>
                         </ul>
                     </div>
@@ -70,7 +67,7 @@
                     Categories
                 </a>
                 <ul class="collapse show list-unstyled" id="homeSubmenu">
-                    <?php getCats()?>;
+                    <?php getCats(); ?>
                 </ul>
             </li>
             <li class="active">
@@ -79,7 +76,7 @@
                     Brands
                 </a>
                 <ul class="collapse show list-unstyled" id="pageSubmenu">
-                    <?php getBrand()?>;
+                    <?php getBrands(); ?>
                 </ul>
             </li>
             <li>
@@ -99,9 +96,7 @@
     <article id="content" class="container-fluid bg-white">
 
         <div class="row">
-            <div class="col">
-                Content
-            </div>
+                <?php getPro(); ?>
         </div>
     </article>
 
