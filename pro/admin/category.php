@@ -26,7 +26,7 @@ if(isset($_POST['insert_pro'])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Insert Product</title>
+    <title>Insert Category</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -42,17 +42,7 @@ if(isset($_POST['insert_pro'])){
     <h1 class="text-center my-4"><i class="fas fa-plus fa-md"></i> <span class="d-none d-sm-inline"> Add New </span> Product </h1>
     <form action="insert_product.php" method="post" enctype="multipart/form-data">
         <div class="row">
-            <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto">
-                <label for="pro_title" class="float-md-right"> <span class="d-sm-none d-md-inline"> Product </span> Title:</label>
-            </div>
-            <div class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="fas fa-file-signature"></i></div>
-                    </div>
-                    <input type="text" class="form-control" id="pro_title" name="pro_title" placeholder="Enter Product Title" >
-                </div>
-            </div>
+
             <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto">
                 <label for="pro_cat" class="float-md-right"><span class="d-sm-none d-md-inline"> Product </span> Category:</label>
             </div>
@@ -61,45 +51,13 @@ if(isset($_POST['insert_pro'])){
                     <div class="input-group-prepend">
                         <div class="input-group-text"><i class="fas fa-list-alt"></i></div>
                     </div>
-                    <select class="form-control" id="pro_cat" name="pro_cat">
-                        <option>Select Category</option>
-                        <?php
-                        $getCatsQuery = "select * from categories";
-                        $getCatsResult = mysqli_query($con,$getCatsQuery);
-                        while($row = mysqli_fetch_assoc($getCatsResult)){
-                            $cat_id = $row['cat_id'];
-                            $cat_title = $row['cat_title'];
-                            echo "<option value='$cat_id'>$cat_title</option>";
-                        }
-                        ?>
-                    </select>
+                    <textarea class="form-control" id="pro_cat" name="pro_cat">
+
+                    </textarea>
                 </div>
             </div>
         </div>
-        <div class="row my-3">
-            <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto">
-                <label for="pro_brand" class="float-md-right"> <span class="d-sm-none d-md-inline"> Product </span> Brand:</label>
-            </div>
-            <div class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="fas fa-stamp"></i></div>
-                    </div>
-                    <select class="form-control" id="pro_brand" name="pro_brand">
-                        <option>Select Brand</option>
-                        <?php
-                        $getBrandsQuery = "select * from brands";
-                        $getBrandsResult = mysqli_query($con,$getBrandsQuery);
-                        while($row = mysqli_fetch_assoc($getBrandsResult)){
-                            $brand_id = $row['brand_id'];
-                            $brand_title = $row['brand_title'];
-                            echo "<option value='$brand_id'>$brand_title</option>";
-                        }
-                        ?>
-                    </select>
-                </div>
-            </div>
-     
+
 
 
         <div class="row my-3">
